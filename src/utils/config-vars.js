@@ -22,7 +22,8 @@ const optionalFields = [
     'PLAYCANVAS_INCLUDE_REG',
     'PLAYCANVAS_FORCE_REG',
     'PLAYCANVAS_DRY_RUN',
-    'PLAYCANVAS_VERBOSE'
+    'PLAYCANVAS_VERBOSE',
+	'PLAYCANVAS_SKIP_BRANCH_CHECK'
 ];
 
 const allConfigFields = requiredFields.concat(optionalFields);

@@ -14,7 +14,8 @@ class GetConfig {
 
     this.setClient();
 
-    await this.checkBranchMatch();
+    const skip = this.result.PLAYCANVAS_SKIP_BRANCH_CHECK === 1;
+    if (!skip) await this.checkBranchMatch();
 
     this.setParser();
 
